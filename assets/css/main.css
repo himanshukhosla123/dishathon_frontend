@@ -1,0 +1,469 @@
+body{
+    background: #000000;
+/*    color:white;*/
+}
+
+header{
+    position:fixed;
+    top: 0px; 
+    width: 100%;
+    height:70px;
+    z-index: 100;
+    padding:5px;
+    overflow: hidden;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+.footer,header{
+    background: #21242E;
+    background: #272C2E;
+}
+.footer{
+    text-align: center;
+}
+ng-view{
+    min-height: calc(100vh - 230px);
+    display: block;
+}
+.nav2{
+    margin-right: 30px;
+}
+.nav2 #face-dect,#child-mode{
+    color:#fff;
+    background: #FF3C00;
+    font-weight: 600;
+    border-radius:30px;
+    padding:15px 10px;
+    margin-right: 10px;
+}
+#child-mode{
+    padding: 15px 9px;
+}
+#child-mode.active{
+    background:#fff;
+    color:#FF3C00;
+}
+.nav2>.nav>li{
+    padding:15px 5px;
+}
+.resent-grid-info h6{
+    margin: 0px 0px;
+    color: rgba(255,255,255,0.6);
+    text-transform: capitalize;
+}
+.absolute-share{
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+.black-a .title{
+    color: black;
+}
+.none{
+    display: none;
+}
+header a{
+    color: #B2B2B2;
+    font-weight:500;
+    font-size: 14px;
+}
+header .fa{
+    font-size:28px;
+    margin:0px 5px;
+}
+header .fa:hover{
+    color: white;
+}
+#login a{
+    color:orangered;
+}
+#language{
+    font-size:15px;
+    padding:0px;
+    margin:-5px;
+}
+#logo{
+    margin-left:30px;
+    margin-right:20px;
+    display: inline-block;
+    float: left;
+    padding:5px 0px;
+}
+
+#logo a{   
+    font-family: cursive;
+    text-transform:lowercase;
+    font-size:30px;
+    text-decoration: none;
+    color: #FF3C00;
+}
+header ul li{
+    padding: 20px 13px;
+    color: #B2b2b2;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+nav{
+    display: inline-block;
+    float: left;
+}
+header .nav>li{
+    font-size: 16px;
+}
+nav ul li:hover{
+    color:orangered;
+}
+
+
+
+/*chatr vot*/
+
+.chat_bot{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 20000;
+    border-radius:50%;
+}
+.toggle_bot_button{
+    display:block;
+    padding:15px;
+    height:80px;
+    cursor: pointer;
+    width:80px;
+    border-radius:50%;
+    transition:0.2s;
+    background: white;
+}
+
+.chat_box{
+    border-radius:20px;
+/*    border:1px solid #ccc;*/
+    overflow:hidden;
+    position:fixed;
+    background:white;
+    right:100px;
+    bottom:100px;
+    width:350px;
+    display:none;
+}
+.box-header{
+    color: white;
+    padding:18px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FF3C00;
+}
+.box-title{
+    margin:0px;
+}
+.chat-messages {
+    padding:10px;
+    max-height:420px;
+    background:#fff;
+    overflow:auto;
+}
+.chat-msg{
+    padding-right:20%; 
+     margin-bottom:10px; 
+}
+.chat-msg.chat-right{
+    padding-left:20%;
+    padding-right:0px;
+}
+
+.chat-msg.chat-right .message{
+    background:#ff3c00;
+    border-color:#ff3c00;
+    color:white;
+    font-size: 13px;
+}
+
+.box-footer {
+    border-top:2px solid #BDBDBD;
+    padding: 10px;
+    background-color:#fff;
+color: black;
+}
+
+.box .col-xs-12{
+    min-height:0px;
+}
+.card{
+    width: 100%;
+    padding-right: 10%;
+}
+.chat-img img{
+    max-height:200px;
+    max-width:100%;
+    direction: inline-block;
+    margin: 0px;
+}
+.no-mrg{margin: 0px;}
+.chat-desc h5{
+    color: black;
+    width:50%;
+    float: left;
+}
+.chat-desc h6{
+    color: #ccc;
+    width:50%;
+    float: right;
+}
+.chat-msg .message{
+    padding:8px 15px;
+    border-radius:20px;
+    background:#B7B7B7;
+    font-size:13px; 
+    border:1px solid #B7B7B7;
+    color: white;
+    line-height:18px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+.single-right-grid-right a.title{
+    color: black;
+} 
+.thumbnail{
+    border:1px solid #ccc;
+    box-shadow: 
+}
+.chat-right{
+    text-align: right;
+}
+.btn:focus,.form-control,.form-control:focus{
+    outline: none;
+    border:none;
+    box-shadow: none;
+}
+.box-footer .btn{
+    background:white;
+    font-size: 16px;
+    border: none;
+}
+
+.chat_bot.open .chat_box{
+    display: block;
+}
+.btn-user,.btn-user:hover{
+    border:1px solid #0195FF;
+    color: #0195FF;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 15px;
+    text-decoration: none;
+}
+.mb10{
+    margin:15px 0px;
+}
+
+/**/
+
+.tags-list{
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+}
+.line{
+    margin: 5px 0px;
+    border-radius: 15px;
+    border-bottom: 1px solid #eee;
+}
+.tags-list li{
+    width:100%; 
+    padding:10px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.btn-orange{
+    background: #FF3c00;
+    color: white;
+}
+.upload-box .form-control{
+    padding: 5px;
+    height: auto;
+    background: black;
+    border: 1px solid #FF3C00;
+    border-top: none;
+    color:white;
+    border-radius: 0px;
+}
+.tag-container{
+    word-wrap: normal;
+}
+.tag-container strong{
+    font-size: 14px;
+    font-weight: 900;
+}
+.label{
+    font-size: 14px;
+    background: #FF3C00;
+    color: white;
+    border-radius: 10px;
+    padding:5px 5px;
+    min-width:80px;
+    text-align: center;
+    display: inline-block;
+    margin:5px 2.5px;
+}
+#search_box{
+    margin:10px 0px;
+    display:none;
+}
+#search_box .fa{
+    background-color: orangered;
+    padding: 13px 14px;
+/*    margin: -11px 2px;*/
+    font-size: 18px;
+    font-weight:100;
+    color: white;
+    margin: 10px 5px;
+    float:left;
+    border-radius:150%;
+}
+
+
+#search_music{
+    position:fixed;
+    z-index:15;
+    top:70px;
+    display:none;
+    width:100%;
+    background-color:rgba(33,36,46,0.8);
+    left:0px;
+    padding:10px;
+}
+#search_music .btn{
+    padding:1px;
+    width:45%;
+/*    display:none;*/
+    margin-left:20px;
+/*    margin-top: 10px;*/
+    border-radius:50px;
+}
+#search_music input[type="text"]{
+    width:75%;
+    margin-left:20px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    
+}
+
+#search_music input[type="text"]:focus{
+    outline:none;
+}
+.search .fa{
+    margin-right:10px;
+}
+.search a{
+    font-size:30px;
+    color: white;
+}
+
+#search_music .search{
+    padding:10px;
+    color: white;
+    width:21%;
+    background-color: orangered;
+    margin-left:0px;
+}
+
+.fa:hover,a:hover{color: white;}
+.trending{
+    border-radius:50px;
+    padding: 7px 10px;
+    margin:auto 10px;
+    color:orangered;
+    background-color: black;
+    text-transform: capitalize;
+}
+
+
+
+ #rating-wrap:hover .rating {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    -khtml-opacity: .6;
+    opacity: .6
+}
+
+ .rating {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity .5s ease
+}
+
+ #rating-wrap:hover .rating:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+ .rating-emote {
+    background-image:url("feedback.png");
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-size: 185px 37px;
+    background-repeat: no-repeat;
+    background-position:50%;
+/*    transform:scale(2,2);*/
+}
+
+ .rating-name {
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+
+
+@media only screen and (max-width:667px),
+screen and (max-width:450px) {
+     .rating-name {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1
+    }
+}
+
+ .rating:hover .rating-name {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+ .rating-emote.rating-yuck {
+    background-position: -147px 0
+}
+
+ .rating-emote.rating-bad {
+    background-position: -36px 0
+}
+
+ .rating-emote.rating-meh {
+    background-position: -110px 0
+}
+
+ .rating-emote.rating-good {
+    background-position: -73px 0
+}
+
+ .rating-emote.rating-awesome {
+    background-position: 2px 0
+}

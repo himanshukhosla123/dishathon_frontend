@@ -1,0 +1,96 @@
+<div class="upload-grids" ng-controller="upload">
+					<div class="upload-right" >
+						<form action="" ng-submit="uploadVideo()">
+						<div class="upload-file">
+							<div class="services-icon" ng-click="toggleUploadDialog()">
+								<span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+							</div>
+							<input type="file" value="Choose file.." id="file-input" >
+						</div>
+						<div class="upload-info">
+							<h5>Select files to upload</h5>
+							<span>or</span>
+							<p>Drag and drop files</p>
+						</div>
+						<h4 style="color:black" class="text-center">{{videoName}}</h4>
+						<div class="text-center">
+						    <input type="submit" value="Upload" class="btn btn-warning" style="background:#FF3c00;" >
+						</div>
+                            </form>
+						
+					</div>
+					
+					
+				<div class="upload-box none">
+				    <div class="row">
+				        
+				        <div class="col-xs-9">
+				            <video src="http://localhost:3005/a.mp4" style="width:100%;height:400px" controls></video>
+				            <hr>
+				            <h2>{{videoName}}</h2>
+				        </div>
+				        
+				        <div class="col-xs-3">
+				            <ul class="tags-list">
+				                <li>
+				                    <h4>Detected Details</h4>
+				                    <div class="line"></div>
+				                        <div class="tag-container">
+				                        <span style="display:inline-block;margin:5px;"><strong>Nuidty:-</strong></span>
+				                            <div class="label" ng-repeat="x in detected.nudity"> {{x.time}},{{x.case}}  <span> <i class="fa fa-email-reply"></i></span>
+				                            </div>    
+				                        </div>
+				                    <div>
+				                    <div class="line"></div>
+				                        <div class="tag-container">
+				                        <span style="display:inline-block;margin:5px;"><strong>Racism:-</strong></span>
+				                            <div class="label" ng-repeat="x in detected.racicsm"> {{x.time}},{{x.case}} <span> 
+				                                <i class="fa fa-email-reply"></i></span>
+				                            </div>    
+				                        </div>
+				                    </div>
+				                    
+				                    <div>
+				                    <div class="line"></div>
+				                        <div class="tag-container">
+				                        <span style="display:inline-block;margin:5px;"><strong>Offensive Content:-</strong></span>
+				                            <div class="label" ng-repeat="x in detected.racicsm"> {{x.time}},{{x.case}} <span> 
+				                                <i class="fa fa-email-reply"></i></span>
+				                            </div>    
+				                        </div>
+				                    </div>
+<!--				                    </div>-->
+				                </li>
+				                
+				                <li>
+				                    <h4>Tags</h4>
+				                    <div class="line"></div>
+				                    <div class="tag-container">
+				                        <div class="label" ng-repeat="x in detected.tags"> {{x}} <span ng-click="removeFromTags(x)"> <i class="fa fa-times"></i></span>
+				                            </div>
+				                    </div>
+				                    <div>
+				                        <form action="" ng-submit="submitTags()">
+				                        <input type="text" class="form-control" ng-model="tag" placeholder="Add tags" name="tags"></form>
+				                    </div>
+				                </li>
+				                <li>
+				                    <h4>Genres</h4>
+				                    <div class="line"></div>
+				                        <div class="tag-container">
+				                        <div class="label" ng-repeat="x in detected.generes"> {{x}} <span ng-click="removeFromGen(x)"> <i class="fa fa-times"></i></span>
+				                            </div>   
+				                        
+				                        </div>
+				                    <div>
+				                        <form action="" ng-submit="submitGeneres(this.gen.value)">
+				                        <input type="text" class="form-control"
+				                        ng-model="gen" placeholder="Add Generes" name="gen"></form>
+				                    </div>
+				                </li>
+				            </ul>
+				        </div>
+				        
+				    </div>
+				</div>		
+</div>
